@@ -1,11 +1,6 @@
-public class Modulus {
-    int num1;
-    int num2;
-    public Modulus(int i,int i1){
-        num1=i;
-        num2=i1;
-    }
-    public int mod(){
-        return num1%num2;
+public class Modulus implements Operation{
+    @Override
+    public int perform(int number1, int number2) {
+        return number1%number2;
     }
 }
